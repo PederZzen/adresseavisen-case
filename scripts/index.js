@@ -48,6 +48,16 @@ function activateScrollListener() {
   });
 }
 
+// Funksjon som snurrer bildet 360 grader hver gang noen trykker på en knapp
+let rotation = 0;
+
+function uselessFunction() {
+  rotation += 360;
+  const illustration = document.getElementById("salesposter_image");
+  illustration.style.transform = `rotate(${rotation}deg)`;
+  illustration.style.transition = "all .3s";
+}
+
 // Viser salgsplakat med produktinfo
 function showSalesPoster(product) {
   const productName =
@@ -56,9 +66,9 @@ function showSalesPoster(product) {
   salesPoster.id = "salesposter";
 
   salesPoster.innerHTML = `
-    <img src="../assets/illustration.png" alt="Trønder med bærbar pc"/>  
+    <img id="salesposter_image" src="../assets/illustration.png" alt="Trønder med bærbar pc"/>  
     <h3><span>${productName}:</span> Les med Pluss-tilgang</h3>
-    <button class="btn btn-primary">${product.price_firstmonth} kr første måned</button>
+    <button class="btn btn-primary" onClick="uselessFunction()">${product.price_firstmonth} kr første måned</button>
     <small>Ordinær pris ${product.price_full},-/mnd</small>
     <ul>
       <li>Fri tilgang til Skinnvestpodden</li>
