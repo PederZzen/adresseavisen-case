@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+header {
+  background-color: #005379;
+  color: #fff;
+  padding: 10px 20px;
+}
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+.header-image {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+#image-ingress {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+article {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+article h2 {
+  color: #333;
+}
+.meta {
+  color: #777;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#salesposter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  animation-name: slideIn;
+  animation-duration: 0.3s;
+}
+
+#salesposter img {
+  max-width: 200px;
+}
+
+.btn {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  filter: brightness(1.2);
+}
+
+.btn-secondary {
+  background-color: #005379;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+@keyframes slideIn {
+  from {
+    top: 80%;
+  }
+  to {
+    top: 50%;
+  }
+}
