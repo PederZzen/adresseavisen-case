@@ -47,34 +47,65 @@ article h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem 5rem;
   background-color: white;
-  width: 400px;
   position: fixed;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation-name: slideIn;
   animation-duration: 0.3s;
+  border: 1px solid black;
+}
+
+#salesposter span {
+  font-weight: bold;
+}
+
+#salesposter h3 {
+  font-weight: normal;
 }
 
 #salesposter img {
   max-width: 200px;
 }
 
+#salesposter small {
+  margin-top: 5px;
+}
+
+#salesposter ul {
+  width: 100%;
+}
+
+#sign-in_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
 .btn {
   cursor: pointer;
   transition: all 0.3s;
+  color: white;
+  border: none;
+  padding: 10px 20px;
 }
 
 .btn:hover {
   filter: brightness(1.2);
 }
 
+.btn-primary {
+  background-color: #1da750;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
 .btn-secondary {
   background-color: #005379;
-  color: white;
   font-size: 1rem;
-  padding: 10px 20px;
-  border: none;
   border-radius: 20px;
 }
 
